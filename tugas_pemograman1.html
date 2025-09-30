@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pertemuan 1 HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 5px;
+            margin: 5px 0;
+            width: 250px;
+        }
+        input[type="submit"] {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        hr {
+            margin: 30px 0;
+            border: 1px solid #ddd;
+        }
+        img {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        ol {
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Latihan HTML</h1>
+    
+    <!-- 1. Tabel -->
+    <h2>1. Membuat Tabel</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Kelas</th>
+            <th>Prodi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hudza Anadzif</td>
+            <td>24090137</td>
+            <td>3D</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ayu Setiani</td>
+            <td>24090116</td>
+            <td>3D</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dwiki Raditya Mubarok</td>
+            <td>24090112</td>
+            <td>3D</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Siti Triyani</td>
+            <td>24090098</td>
+            <td>3D</td>
+            <td>Teknik Informatika</td>
+        </tr>
+    </table>
+    
+    <hr>
+    
+    <!-- 2. Form -->
+    <h2>2. Membuat Form</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki" name="jk" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jk" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+        
+        <input type="submit" value="Daftar">
+    </form>
+    
+    <hr>
+    
+    <!-- 3. List -->
+    <h2>3. Membuat List Mata Kuliah Dari Semester 1 sampai 3</h2>
+    
+    <h3>List Mata Kuliah Semester 1:</h3>
+    <ol>
+        <li>Bahasa Inggris 1</li>
+        <li>Bahasa Indonesia</li>
+        <li>Pendidikan Agama</li>
+        <li>Konsep Teknologi Informasi</li>
+        <li>Kalkulus</li>
+        <li>Logika Informatika</li>
+        <li>Organisasi dan Arsitektur Komputer</li>
+        <li>Algoritma dan Struktur Data 1</li>
+        <li>Sistem Operasi</li>
+    </ol>
+    
+    <h3>List Mata Kuliah Semester 2:</h3>
+    <ol>
+        <li>Interaksi Manusia dan Komputer</li>
+        <li>Analisis dan Desain Perangkat Lunak</li>
+        <li>Matematika Diskrit</li>
+        <li>Aljabar Linear</li>
+        <li>E-Commerce</li>
+        <li>Algoritma dan Struktur Data 2</li>
+        <li>Pengantar Rekayasa Perangkat Lunak</li>
+        <li>Bahasa Inggris 2</li>
+        <li>Kewarganegaraan</li>
+    </ol>
+    
+    <h3>List Mata Kuliah Semester 3:</h3>
+    <ol>
+        <li>Pemrograman Komputer 1</li>
+        <li>Jaringan Komputer 1</li>
+        <li>Pemrograman WEB 1</li>
+        <li>Sistem Basis Data 1</li>
+        <li>Matematika Numerik</li>
+        <li>Statistika</li>
+        <li>Enterprise Resource Planning</li>
+        <li>Desain Grafis Dan Multimedia</li>
+    </ol>
+    
+    <hr>
+    
+    <!-- 4. Gambar -->
+    <h2>4. Menampilkan Gambar</h2>
+    <img src="https://harkatnegeri.ac.id/storage/images/article_Universitas_Harkat_Negeri_Luncurkan_Pusat_Inovasi_Peradaban.jpg"
+         alt="Logo Universitas Harkat Negeri"
+         width="400"
+         height="250">
+</body>
+</html>
